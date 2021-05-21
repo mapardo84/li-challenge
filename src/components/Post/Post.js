@@ -5,7 +5,7 @@ import axios from 'axios';
 import { Comments } from '../Comments/Comments';
 
 const BASE_URL = 'https://dummyapi.io/data/api';
-const APP_ID = '60a8017387bb141174d82c8f';
+const APP_ID =  process.env.REACT_APP_IDAPI;
 
 export const Post = ({ post, tag, setTag }) => {
     const { id, owner, image, tags, text, publishDate, likes, link } = post;

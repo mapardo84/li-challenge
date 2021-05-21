@@ -4,7 +4,7 @@ import { Post } from "../Post/Post";
 import './Posts.css';
 
 const BASE_URL = 'https://dummyapi.io/data/api';
-const APP_ID = '60a8017387bb141174d82c8f';
+const APP_ID = process.env.REACT_APP_IDAPI;
 
 export const Posts = () => {
     const [posts, setPosts] = useState([]);
